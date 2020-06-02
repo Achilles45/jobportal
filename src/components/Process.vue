@@ -47,11 +47,12 @@ export default {
         h2{
             font-weight: bold;
             color: #000;
-            font-size: 3rem;
+            font-size: 2.5rem;
         }
         p{
             color: #676767;
             font-size: .9rem;
+            padding-bottom: 1rem;
         }
     }
     .process__wrapper{

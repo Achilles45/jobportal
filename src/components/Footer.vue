@@ -5,9 +5,9 @@
               <div class="col-md-3">
                   <h6 class="head">Company</h6>
                   <ul>
-                    <li><a href="#intro">About</a></li>
-                    <li><a href="#features">Job Listings</a></li>
-                    <li><a href="#products">Contact</a></li>
+                    <li><router-link to="/about">About</router-link></li>
+                    <li><router-link to="/listings">Job Listings</router-link></li>
+                    <li><router-link to="/contact">Contact</router-link></li>
                    <li><a href="#pricing">Sign Up</a></li>
                   </ul>
               </div>

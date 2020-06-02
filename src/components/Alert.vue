@@ -9,8 +9,10 @@
               <div class="col-md-6">
                   <form action="">
                       <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Enter your email address">
+                              <div class="input__holder d-flex justify-content-between">
+                                  <input type="text" class="form-control" placeholder="Enter your email address">
                               <button type="submit" class="alert__btn">Subscribe</button>
+                              </div>
                       </div>
                   </form>
               </div>
@@ -31,6 +33,7 @@ export default {
     padding: 4rem 0;
     background: $primary-color;
     color: #fff;
+    margin-bottom: 0 !important;
     h2{
         font-weight: bold;
     }
@@ -45,7 +48,7 @@ export default {
             height: 3.3rem;
             border-radius: 2px;
             box-shadow: none;
-            margin-bottom: 1rem;
+            flex: 10;
         }
         .alert__btn{
             background: $secondary-color;

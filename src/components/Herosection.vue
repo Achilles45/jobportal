@@ -162,7 +162,7 @@ export default {
 @media only screen and (max-width: 600px){
   .hero{
     padding: 7rem 0;
-    height: 80vh !important;
+    height: 100vh !important;
     .social__holder{
       display: none;
     }

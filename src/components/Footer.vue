@@ -6,23 +6,19 @@
                   <h6 class="head">Company</h6>
                   <ul>
                     <li><router-link to="/about">About</router-link></li>
-                    <li><router-link to="/listings">Job Listings</router-link></li>
-                    <li><router-link to="/contact">Contact</router-link></li>
-                   <li><a href="#pricing">Sign Up</a></li>
+                    <li><router-link to="/contact">Contact Us</router-link></li>
                   </ul>
               </div>
                <div class="col-md-3">
-                  <h6 class="head">Features</h6>
+                  <h6 class="head">Jobs Openings</h6>
                   <ul>
-                      <li><router-link to="/">Investments</router-link></li>
-                      <li><router-link to="/">Data Analysis (coming ...)</router-link></li>
+                       <li><router-link to="/apply">Apply to Jobs</router-link></li>
                   </ul>
               </div>
               <div class="col-md-3">
                   <h6 class="head">Legal</h6>
                   <ul>
-                      <li><router-link to="/">Privacy Policy</router-link></li>
-                      <li><router-link to="/">Terms & Conditions</router-link></li>
+                      <li><router-link to="/policies">Policy & Terms</router-link></li>
                   </ul>
               </div>
               <div class="col-md-3">
@@ -52,11 +48,11 @@
           <hr>
           <div class="row">
               <div class="footer__bottom">
-              <div class="col-12">
-                  <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione architecto, commodi consequuntur quis corporis sapiente excepturi eaque corrupti animi aliquid quo doloribus! Laboriosam est aliquam laudantium quisquam alias atque earum molestias sit saepe itaque consequatur, harum expedita, consequuntur dolore. Quibusdam impedit quo velit nihil animi libero eligendi voluptatem commodi perspiciatis?</small><br>
-              </div><br>
+              <!-- <div class="col-12">
+                  <small>We pride ourseleves as the company of choice that can provide you with amazing growth opportunities for you. </small><br>
+              </div><br> -->
               <div class="col-12 text-center">
-                  <small class="copy">Copyright &copy;2020 All rights reserved. Funbile Investment Company Limited</small>
+                  <small class="copy">Copyright &copy;2020 All rights reserved.</small>
               </div>
           </div>
           </div>
@@ -74,7 +70,7 @@ export default {
 @import '../assets/styles/colors';
 footer{
     background: #f8f9fc;
-    padding: 5rem 0;
+    padding: 7rem 0;
     .head{
         color:#00093a;
         font-weight: 900;

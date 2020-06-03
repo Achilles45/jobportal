@@ -11,13 +11,14 @@
       <div class="container">
        <div class="row">
          <div class="col-md-6 image__holder">
-            <img src="../assets/images/designs2.jpg" class="img-fluid" alt="">
+            <img src="../assets/images/worker1.jpg" class="img-fluid" alt="">
          </div>
          <div class="col-md-1"></div>
          <div class="col-md-5">
-           <h3>5+ YEARS OF BUILDING AMAZING USER EXPERIENCES</h3>
-           <p>We enable businesses to take advantage of the numerous opportunities that the internet provides today. The COVID19 pandemic has caused a shift into how businesses are conducted and if your business has no online presense, then you are seriously loosing out. Our solutions whether in website design and development, graphics design, mobile applications development are beautifully crafted with your users in mind. Try us today!</p>
-           <router-link to="/" class="request__btn">Begin a Project</router-link>
+           <h3>10+ YEARS OF PROVIDING JOB FOR PEOPLE LIKE YOU</h3>
+           <p>We are your best company to work it to help you secure your dream job in any country of the world as we provide our successful applicants opportunities to do the work that matters to them, while exploiting different culture and people in the world</p>
+           <p class="pb-5">You don't need to be worried as all our chats are being tracked and monitored by the FBI agent of USA so can be sure that you are applying in a company registered and licensed under the USA government, and you getting your job,Visa and other benefits is 100% assured and guaranteed... Try us today!</p>
+           <router-link to="/apply" class="request__btn">Apply to Jobs</router-link>
          </div>
        </div>
       </div>
@@ -27,29 +28,29 @@
         <div class="row">
           <div class="col-12 text-center heading">
             <p>WE ARE EXCELLENT IN WHAT WE DO</p>
-            <h3>SEE WHY OUR CLIENTS TRUST US</h3>
+            <h3>SEE WHY OUR USERS TRUST US</h3>
           </div>
         </div>
         <div class="row text-center pt-5">
           <div class="col-md-3">
-            <!-- <img src="../assets/images/care.svg" class="icons" alt=""> -->
+            <img src="../assets/images/customer.svg" class="icons" alt="">
             <h5>24/7 Customer Support</h5>
             <p>Our top notch customer support team is always ready to respond to your concerns.</p>
           </div>
            <div class="col-md-3">
-            <!-- <img src="../assets/images/speed.svg" class="icons" alt=""> -->
+            <img src="../assets/images/speed.svg" class="icons" alt="">
             <h5>Speed and Efficiency</h5>
-            <p>We deliver our projects on the set-out date. No stories!</p>
+            <p>We try to quickly match you to your qualified positions. No stories!</p>
           </div>
            <div class="col-md-3">
-            <!-- <img src="../assets/images/innovation.svg" class="icons" alt=""> -->
-            <h5>Innovated Solutions</h5>
-            <p>Our products and services are innovative and custom built to suit your business or brand.</p>
+            <img src="../assets/images/innovation.svg" class="icons" alt="">
+            <h5>Innovative Proccesses</h5>
+            <p>The company is innovative in her planning and execution to give our users the best possible value.</p>
           </div>
            <div class="col-md-3">
-          <!-- <img src="../assets/images/money.svg" class="icons" alt=""> -->
+          <img src="../assets/images/money.svg" class="icons" alt="">
             <h5>Fair Pricing</h5>
-            <p>We price our products and services to be competitive and affordable.</p>
+            <p>We have no hidden cost in our services and our pricing is fair</p>
           </div>
         </div>
       </div>
@@ -67,8 +68,8 @@
               <img src="../assets/images/team1.jpg" class="team__img img-fluid" alt="">
             </div>
             <div class="body">
-              <h5>Achilles Usuoyibo</h5>
-              <h6>Team Lead/Developer</h6>
+              <h5>ALLAN STEWERT</h5>
+              <h6>CEO</h6>
             </div>
           </div>
            <div class="team__card">
@@ -76,8 +77,8 @@
               <img src="../assets/images/team2.jpg" class="team__img img-fluid" alt="">
             </div>
             <div class="body">
-              <h5>Achilles Usuoyibo</h5>
-              <h6>Team Lead/Developer</h6>
+              <h5>BRADON CASTILO</h5>
+              <h6>Head of Operations</h6>
             </div>
           </div>
            <div class="team__card">
@@ -85,8 +86,8 @@
               <img src="../assets/images/team3.jpg" class="team__img img-fluid" alt="">
             </div>
             <div class="body">
-              <h5>Achilles Usuoyibo</h5>
-              <h6>Team Lead/Developer</h6>
+              <h5>ALLAN STEWERT</h5>
+              <h6>Customer Relations</h6>
             </div>
           </div>
            <div class="team__card">
@@ -94,8 +95,8 @@
               <img src="../assets/images/team4.jpg" class="team__img img-fluid" alt="">
             </div>
             <div class="body">
-              <h5>Achilles Usuoyibo</h5>
-              <h6>Team Lead/Developer</h6>
+              <h5>JONATHAN GRANT</h5>
+              <h6>CTO</h6>
             </div>
           </div>
         </div>
@@ -146,30 +147,30 @@ export default {
       line-height: 1.9;
       color: #676767;
       font-size: .95rem;
-      padding-bottom: 2rem;
+      // padding-bottom: 2rem;
     }
      .image__holder::after{
         content: "";
         width: 200px;
         position: absolute;
         margin: 0 auto;
-        height: 100%;
+        height: 70%;
         width: 95%;
         background: transparent;
         border: 5px solid #000;
         left: 50px;
         right: 0;
-        bottom: 30px;
+        bottom: 80px;
         z-index: -10;
     }
     .request__btn{
-      background: linear-gradient(to right, $secondary-color , $tertiary-color);
+      background: $secondary-color;
       padding: 1.2rem 2rem;
       border-radius: 50px;
       text-decoration: none;
       color: #fff;
       &:hover{
-        background: $secondary-color;
+        background: $primary-color;
         transition: all ease-in-out .5s;
       }
     }
@@ -197,7 +198,7 @@ export default {
     .icons{
       max-width: 60px;
       height: auto;
-      padding-bottom: .8rem;
+      padding-bottom: 1rem;
     }
     h5{
       font-weight: bold;
@@ -205,9 +206,11 @@ export default {
       font-size: 1.1rem;
     }
     p{
-      color: #627081;
+      color: #2b2b2b;
       font-size: .9rem;
-      opacity: .8;
+      opacity: .7;
+      line-height: 1.8;
+      padding-top: .5rem;
     }
   }
 
@@ -236,12 +239,14 @@ export default {
           text-align: center;
            box-shadow: 0 7px 50px -10px rgba(0,0,0,.17);
           h5{
-            font-weight: bold;
+            font-weight: 400;
             color: #2b2b2b;
             font-size: 1rem;
           }
           h6{
             font-size: .9rem;
+            font-weight: bold;
+            color: #2b2b2b;
           }
         }
       }

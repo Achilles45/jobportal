@@ -90,7 +90,7 @@ export default {
 @import '../assets/styles/_colors';
 .contact{
   .contact__wrapper{
-       background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('../assets/images/img10.jpg');
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('../assets/images/img10.jpg');
     color: #fff;
     padding: 4rem 0;
     background-repeat: no-repeat;

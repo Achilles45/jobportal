@@ -46,18 +46,25 @@ export default {
     form{
         input{
             height: 3.3rem;
-            border-radius: 2px;
+            border-radius: 0px;
             box-shadow: none;
             flex: 10;
         }
         .alert__btn{
             background: $secondary-color;
             padding: 1rem;
-            border-radius: 4px;
+            border-radius: 0px;
             border: none;
             color: #fff;
             font-size: .9rem;
         }
+    }
+}
+
+//Meida Queries
+@media only screen and (max-width: 600px){
+    h2{
+        font-size: 1.5rem;
     }
 }
 </style>

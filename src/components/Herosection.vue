@@ -18,7 +18,7 @@
             <h1 class="animate__animated animate__slideInUp"><strong>Find The Most Exciting Job Today</strong></h1>
             <p>We pride ourselves in helping professionals secure their dream jobs in diverse sectors and industries in different countries effortlessly. Over 500 people has gotten jobs through us since launching.</p>
             <div class="pb-5">
-              <router-link to="/" class="hero__btn">See Jobs&nbsp;&nbsp; <i class="fa fa-long-arrow-alt-right"></i></router-link>
+              <router-link to="/apply" class="hero__btn">Apply to Jobs&nbsp;&nbsp; <i class="fa fa-long-arrow-alt-right"></i></router-link>
             </div>
           </div>
           <!-- <div class="col-md-1"></div> -->
@@ -43,6 +43,7 @@ export default {
   color: #fff;
   position: relative;
   padding: 8rem 0;
+  height: 100vh;
  .text{
    h5{
      font-size: .8rem;
@@ -160,7 +161,7 @@ export default {
 //Media queries
 @media only screen and (max-width: 600px){
   .hero{
-    padding: 7.5rem 0;
+    padding: 7rem 0;
     height: 80vh !important;
     .social__holder{
       display: none;

@@ -45,9 +45,9 @@ export default {
     padding: 4rem 0;
     .heading{
         h2{
-            font-weight: bold;
+            font-weight: 400;
             color: #000;
-            font-size: 2.5rem;
+            font-size: 2.2rem;
         }
         p{
             color: #676767;

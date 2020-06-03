@@ -4,6 +4,7 @@ import Index from '../views/Index.vue'
 import Contact from '../views/Contact.vue'
 import SignUp from '../views/SignUp.vue'
 import SignIn from '../views/SignIn.vue'
+import Apply from '../views/Apply.vue'
 
 Vue.use(VueRouter)
 
@@ -35,6 +36,11 @@ Vue.use(VueRouter)
     path: '/signin',
     name: 'SignIn',
     component: SignIn
+  },
+  {
+    path: '/apply',
+    name: 'Apply',
+    component: Apply
   },
 ]
 

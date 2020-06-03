@@ -4,7 +4,7 @@
           <div class="row">
               <div class="col-md-2"></div>
               <div class="col-md-8 text-center heading">
-                  <h2>JOB OPPORTUNITIES FOR EVERYONE</h2>
+                  <h2>JOBS ARE EVERYONE</h2>
                   <p>We have a job for you irrespective of your race, color, education and experience.</p>
               </div>
               <div class="col-md-2"></div>
@@ -83,9 +83,10 @@ export default {
     }
     h3{
         font-weight: bold;
-        color: #2b2b2b;
+        color: #000;
         padding-bottom: 1rem;
         padding-top: 1rem;
+        font-size: 2.2rem;
     }
     p{
         color: #2b2b2b;

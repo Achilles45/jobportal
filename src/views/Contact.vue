@@ -14,11 +14,11 @@
              <h2>Contact us today!</h2>
             <h5>The customer support team is always ready to answer all your questions</h5>
             <h6><i class="fa fa-home"></i>Contact Office</h6>
-            <p>Opposite main gate, University of Nigeria, Nsukka, Enugu State, Nigeria.</p>
+            <p>Third Drive, Florida, United States of America.</p>
             <h6><i class="fa fa-envelope"></i>Email Address</h6>
             <p>support@customsolutions.com</p>
              <h6><i class="fa fa-phone"></i>Phone Number/Whatsapp</h6>
-             <p><a href="tel:08103515205">08103515205</a></p><br>
+             <p><a href="tel:+491789162706">+491789162706</a></p><br>
          </div>
          <div class="col-md-1"></div>
          <div class="col-md-5 text">
@@ -38,10 +38,10 @@
                    <textarea name="" id="" cols="10" rows="6" class="form-control" v-model="message" placeholder="Your message">
                      </textarea>
                </div>
-               <div v-if="err" class="alert alert-danger">
+               <div v-if="err" class="alert alert-danger animate__animated animate__bounce">
                {{err}}
              </div>
-             <div v-if="success" class="alert alert-success">
+             <div v-if="success" class="alert alert-success animate__animated animate__bounce">
                {{success}}
              </div>
                <button type="submit" class="form__btn">Send Message</button>
@@ -77,11 +77,17 @@ export default {
       //Check if the user has filled out form completely
       if(!this.name || !this.email || !this.phone_number || !this.message){
         this.err = 'Please fill out the form and try again!'
+        this.removeAlert()
       }else{
         //Send a success message to the user
         this.success = 'Message sent. We will get back to you soon!'
       }
     },
+    removeAlert(){
+      setTimeout(() => {
+        document.querySelector('.alert').remove()
+      }, 5000);
+    }
   }
 }
 </script>
@@ -90,7 +96,7 @@ export default {
 @import '../assets/styles/_colors';
 .contact{
   .contact__wrapper{
-    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('../assets/images/img10.jpg');
+    background: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)), url('../assets/images/img10.jpg');
     color: #fff;
     padding: 4rem 0;
     background-repeat: no-repeat;
@@ -106,7 +112,7 @@ export default {
     }
   }
   .contact__content{
-      padding: 4rem 0;
+      padding: 6rem 0;
     .text{
      h2{
          font-weight: bold;
@@ -114,16 +120,17 @@ export default {
          font-size: 2.3rem;
      }
      h5{
-         color: #627081;
+         color: #2b2b2b;
          font-size: 1rem;
          font-weight: 400;
          padding-top: .5rem;
          line-height: 1.5;
          padding-bottom: 1.5rem;
+         opacity: .8;
      }
      .fa-home, .fa-envelope, .fa-phone{
          margin-right: .5rem;
-         color: $secondary-color;
+         color: #2b2b2b;
      }
      h6{
          font-weight: bold;
@@ -132,8 +139,10 @@ export default {
          padding-bottom: .5rem;
      }
      p, a{
-         color: #627081;
+         color: #2b2b2b;
          text-decoration: none;
+         opacity: .7;
+         font-size: .9rem;
      }
 
  }
@@ -145,6 +154,9 @@ form{
         border-radius: 0;
         box-shadow: none !important;
         height: 3rem;
+        color: #676767;
+        opacity: .8;
+        font-size: .9rem;
         &::placeholder{
             font-size: .9rem;
             font-weight: 500;
@@ -158,17 +170,18 @@ form{
             font-size: .9rem;
             font-weight: 500;
             color: #676767;
-            opacity: .7;
+            opacity: .8;
             margin-bottom: 2rem;
     }
     .form__btn{
-        background: linear-gradient(to right, $secondary-color , $tertiary-color);
+        background: $secondary-color;
         border: none;
         padding: 1rem 2rem;
         border-radius: 50px;
         color: #fff;
+        outline: none !important;
         &:hover{
-            background: $tertiary-color;
+            background: $primary-color;
             transition: all ease-in-out .5s;
         }
     }
@@ -176,6 +189,11 @@ form{
 
 //Media Queries
 @media only screen and (max-width: 600px){
+  .contact__wrapper{
+    h1{
+      font-size: 2.2rem !important;
+    }
+  }
   .text{
     h2{
       font-size: 2rem !important;

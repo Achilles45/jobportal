@@ -121,7 +121,7 @@ export default {
 @import '../assets/styles/_colors';
 .about{
   .about__wrapper{
-    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('../assets/images/img10.jpg');
+    background: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)), url('../assets/images/img10.jpg');
     color: #fff;
     padding: 4rem 0;
     background-repeat: no-repeat;
@@ -256,9 +256,11 @@ export default {
 
 //Media queries
 @media only screen and (max-width: 600px){
-  //  .about__wrapper{
-  //    padding: 2rem 0 !important;
-  //  }
+ .about__wrapper{
+    h1{
+      font-size: 2.2rem !important;
+    }
+  }
    .about__content{
      h3{
        padding-top: 3rem;

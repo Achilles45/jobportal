@@ -11,8 +11,8 @@
                       <li><router-link to="/about" class="links">About Us</router-link></li>
                       <li><router-link to="/apply" class="links">Apply to Jobs</router-link></li>
                        <li><router-link to="/contact" class="links">Contact Us</router-link></li>
-                      <li><router-link to="/create-account" class="links">Sign Up</router-link></li>
-                      <li><router-link to="/signin" class="links">Sign In</router-link></li>
+                      <!-- <li><router-link to="/create-account" class="links">Sign Up</router-link></li>
+                      <li><router-link to="/signin" class="links">Sign In</router-link></li> -->
                   </ul>
               </div>
               <div @click="showNav()" class="navbar__toggler">

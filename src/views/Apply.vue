@@ -12,18 +12,18 @@
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-10">
-                    <form action="">
+                    <form @submit.prevent="apply()">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="name">First Name *</label>
-                                    <input type="text" class="form-control" placeholder="First Name">
+                                    <input type="text" class="form-control" placeholder="First Name" v-model="first_name">
                                 </div>
                             </div>
                              <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="name">Last Name *</label>
-                                    <input type="text" class="form-control" placeholder="Last Name">
+                                    <input type="text" class="form-control" placeholder="Last Name" v-model="last_name">
                                 </div>
                             </div>
                         </div>
@@ -31,13 +31,13 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="name">Valid Email Address *</label>
-                                    <input type="text" class="form-control" placeholder="example@gmail.com">
+                                    <input type="text" class="form-control" placeholder="example@gmail.com" v-model="email">
                                 </div>
                             </div>
                              <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="name">Valid Phone Number *</label>
-                                    <input type="text" class="form-control" placeholder="+491789162706">
+                                    <input type="text" class="form-control" placeholder="+491789162706" v-model="phone">
                                 </div>
                             </div>
                         </div>
@@ -45,7 +45,7 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="name">Country *</label>
-                                    <select id="country" name="country" class="form-control">
+                                    <select id="country" name="country" class="form-control" v-model="country">
                                     <option value="Afganistan">Afghanistan</option>
                                     <option value="Albania">Albania</option>
                                     <option value="Algeria">Algeria</option>
@@ -298,7 +298,7 @@
                              <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="name">Home Address *</label>
-                                    <input type="text" class="form-control" placeholder="Home address">
+                                    <input type="text" class="form-control" placeholder="Home address" v-model="address">
                                 </div>
                             </div>
                         </div>
@@ -306,7 +306,7 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="name">Interest Positions *</label>
-                                    <select id="country" name="country" class="form-control">
+                                    <select id="country" name="country" class="form-control" v-model="job">
                                          <option value="Account Managers">Account Managers</option>
                                          <option value="Auditing">Auditing</option>
                                          <option value="Finance Managers">Finance Managers</option>
@@ -339,7 +339,7 @@
                              <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="name">Your Age *</label>
-                                    <input type="text" class="form-control" placeholder="Age">
+                                    <input type="text" class="form-control" placeholder="Age" v-model="age">
                                 </div>
                             </div>
                         </div>
@@ -347,13 +347,13 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="name">State of Residence *</label>
-                                    <input type="text" class="form-control" placeholder="State of residence">
+                                    <input type="text" class="form-control" placeholder="State of residence" v-model="state">
                                 </div>
                             </div>
                              <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="name">City of Residence*</label>
-                                    <input type="text" class="form-control" placeholder="City of residence">
+                                    <input type="text" class="form-control" placeholder="City of residence" v-model="city">
                                 </div>
                             </div>
                         </div>
@@ -361,13 +361,13 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="name">Postal Code *</label>
-                                    <input type="text" class="form-control" placeholder="Postal code">
+                                    <input type="text" class="form-control" placeholder="Postal code" v-model="postal_code">
                                 </div>
                             </div>
                              <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="name">Gender *</label>
-                                    <select class="form-control">
+                                    <select class="form-control" v-model="gender">
                                         <option value="Female">Female</option>
                                         <option value="Female">Male</option>
                                     </select>
@@ -378,15 +378,24 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="name">Previous Job *</label>
-                                    <input type="text" class="form-control" placeholder="State of residence">
+                                    <input type="text" class="form-control" placeholder="Previous Job" v-model="previous_job">
                                 </div>
                             </div>
                              <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="name">Previous Salary*</label>
-                                    <input type="text" class="form-control" placeholder="City of residence">
+                                    <input type="text" class="form-control" placeholder="Previous Salary" v-model="previous_salary">
                                 </div>
                             </div>
+                        </div>
+                        <div v-if="err" class="alert alert-danger">
+                            {{err}}
+                        </div>
+                        <div v-if="success" class="alert alert-success">
+                            {{success}}
+                        </div>
+                        <div v-if="loader" class="loader text-center">
+                            <img src="../assets/images/loader.gif" class="loader__img" alt="">
                         </div>
                         <div class="button__holder pt-5">
                             <button type="submit" class="form__btn">Apply Now</button>
@@ -402,6 +411,8 @@
 </template>
 
 <script>
+import firebase from 'firebase'
+import db from '@/firebase/init'
 import Navbar from "@/components/Navbar.vue"
 import Footer from "@/components/Footer.vue"
 export default {
@@ -411,29 +422,65 @@ export default {
   },
   data(){
     return{
-      name: null,
+      first_name: null,
+      last_name: null,
       email: null,
-      phone_number:null,
-      message:null,
+      phone:null,
+      country:null,
+      address:null,
+      job:null,
+      age:null,
+      state:null,
+      city:null,
+      postal_code:null,
+      gender:null,
+      previous_job:null,
+      previous_salary:null,
       err:null,
-      success:null
+      success:null,
+      loader: false
     }
   },
   methods:{
-    contact(){
+    apply(){
       //Check if the user has filled out form completely
-      if(!this.name || !this.email || !this.phone_number || !this.message){
-        this.err = 'Please fill out the form and try again!'
+      if(!this.first_name || !this.last_name || !this.email || !this.phone || !this.country || !this.address || !this.job || !this.age || !this.state || !this.city || !this.postal_code || !this.gender || !this.previous_job || !this.previous_salary){
+        this.err = 'All fields are important. Fill out the form and try again'
         this.removeAlert()
       }else{
-        //Send a success message to the user
-        this.success = 'Message sent. We will get back to you soon!'
+          this.loader = true
+        //Submit this user job application
+        db.collection('applications').add({
+            first_name: this.first_name,
+            last_name: this.last_name,
+            email:this.email,
+            phone: this.phone,
+            country: this.country,
+            address: this.address,
+            job:this.job,
+            age:this.age,
+            state:this.state,
+            city:this.city,
+            postal_code:this.postal_code,
+            gender:this.gender,
+            previous_job:this.previous_job,
+            previous_salary: this.previous_salary
+        }).catch(err=>{
+            this.err = err.message
+            this.removeAlert()
+        })
+        
+        .then(()=>{
+            this.loader = false
+            this.success = 'Congratulations. Your application was successfully submitted and we will get back to you within 24 hours';
+            this.removeAlert()
+        })
       }
     },
     removeAlert(){
       setTimeout(() => {
         document.querySelector('.alert').remove()
-      }, 5000);
+      }, 7000);
     }
   }
 }
@@ -442,9 +489,9 @@ export default {
 <style lang="scss" scoped>
 @import '../assets/styles/_colors';
 .apply__wrapper{
-    background: $primary-color;
+    // background: $primary-color;
     padding: 4rem 0;
-    color: #fff;
+    // color: #fff;
     h2{
         font-weight: bold;
         font-size: 2.5rem;
@@ -494,6 +541,10 @@ form{
             background: $secondary-color;
             transition: all ease-in-out .5s;
         }
+    }
+    .loader__img{
+        max-width: 100px;
+        height: auto;
     }
 }
 

@@ -86,7 +86,7 @@
               <img src="../assets/images/team3.jpg" class="team__img img-fluid" alt="">
             </div>
             <div class="body">
-              <h5>ALLAN STEWERT</h5>
+              <h5>MARILLYN HEWSON</h5>
               <h6>Customer Relations</h6>
             </div>
           </div>

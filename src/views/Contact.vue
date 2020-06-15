@@ -14,7 +14,7 @@
              <h2>Contact us today!</h2>
             <h5>The customer support team is always ready to answer all your questions</h5>
             <h6><i class="fa fa-home"></i>Contact Office</h6>
-            <p>Third Drive, Florida, United States of America.</p>
+            <p>I7 E 52nd st, New York, NY 10022, United State of America</p>
             <h6><i class="fa fa-envelope"></i>Email Address</h6>
             <p>support@customsolutions.com</p>
              <h6><i class="fa fa-phone"></i>Phone Number/Whatsapp</h6>

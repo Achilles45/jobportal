@@ -27,7 +27,7 @@
                       <div class="first d-flex">
                           <i class="fa fa-map-marker"></i>
                           <div class="content">
-                              <p class="pl-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, distinctio.</p>
+                              <p class="pl-4">I7 E 52nd st, New York, NY 10022, United State of America</p>
                           </div>
                       </div>
                       <div class="first d-flex">
@@ -69,10 +69,11 @@ export default {
 <style lang="scss" scoped>
 @import '../assets/styles/colors';
 footer{
-    background: #f8f9fc;
+    background: #000;
     padding: 7rem 0;
+    color: #fff;
     .head{
-        color:#00093a;
+        color:#fff;
         font-weight: 900;
         text-transform: uppercase;
         font-size: .9rem;
@@ -81,26 +82,26 @@ footer{
     ul{
         li a{
             line-height: 2.7;
-            color: #00093a;
+            color: #fff;
             opacity: .6;
             font-weight: 400;
             font-size: .85rem;
         }
     }
     p{
-        color:#00093a;
+        color:#fff;
         opacity: .6;
         font-weight: 400;
         font-size: .9rem;
     }
     .fa-envelope, .fa-phone, .fa-map-marker{
-        color:#00093a;
+        color:#fff;
         opacity: .6;
         font-weight: bold;
     }
     .footer__bottom{
         small{
-            color: #00093a;
+            color: #fff;
             opacity: .5;
         }
         .copy{

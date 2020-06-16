@@ -16,7 +16,7 @@
             <h6><i class="fa fa-home"></i>Contact Office</h6>
             <p>I7 E 52nd st, New York, NY 10022, United State of America</p>
             <h6><i class="fa fa-envelope"></i>Email Address</h6>
-            <p>support@customsolutions.com</p>
+            <p>info@globalconstructioncompany.net</p>
              <h6><i class="fa fa-phone"></i>Phone Number/Whatsapp</h6>
              <p><a href="tel:+491789162706">+491789162706</a></p><br>
          </div>

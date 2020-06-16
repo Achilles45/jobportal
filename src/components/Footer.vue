@@ -33,7 +33,7 @@
                       <div class="first d-flex">
                           <i class="fa fa-envelope"></i>
                           <div class="content">
-                              <p class="pl-4">support@jobportal.com</p>
+                              <p class="pl-4">info@globalconstructioncompany.net</p>
                           </div>
                       </div>
                        <!-- <div class="first d-flex">

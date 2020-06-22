@@ -10,6 +10,7 @@
                       <li><router-link to="/" class="links">Home</router-link></li>
                       <li><router-link to="/about" class="links">About Us</router-link></li>
                       <li><router-link to="/apply" class="links">Apply to Jobs</router-link></li>
+                      <li><router-link to="/terms" class="links">Terms & Conditions</router-link></li>
                        <li><router-link to="/contact" class="links">Contact Us</router-link></li>
                       <!-- <li><router-link to="/create-account" class="links">Sign Up</router-link></li>
                       <li><router-link to="/signin" class="links">Sign In</router-link></li> -->

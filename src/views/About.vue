@@ -16,8 +16,8 @@
          <div class="col-md-1"></div>
          <div class="col-md-5">
            <h3>10+ YEARS OF PROVIDING JOB FOR PEOPLE LIKE YOU</h3>
-           <p>We are your best company to work it to help you secure your dream job in any country of the world as we provide our successful applicants opportunities to do the work that matters to them, while exploiting different culture and people in the world</p>
-           <p class="pb-5">You don't need to be worried as all our chats are being tracked and monitored by the FBI agent of USA so can be sure that you are applying in a company registered and licensed under the USA government, and you getting your job,Visa and other benefits is 100% assured and guaranteed... Try us today!</p>
+           <p>Global construction company is a group of independent construction companies that carries out work across the United States, Canada, the Caribbean, and in Australia. These diverse operations in the civil infrastructure, heavy industrial, and buildings markets are supported by a strategic presence in more than 30 major centers.</p>
+           <p class="pb-5">Global construction company help to build on a solid foundation of commitment to corporate social responsibility; continually evolve to incorporate new information, technology, and best practices; and help drive transformational change within the construction industry through leading by example.</p>
            <router-link to="/apply" class="request__btn">Apply to Jobs</router-link>
          </div>
        </div>

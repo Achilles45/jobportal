@@ -5,6 +5,7 @@ import Contact from '../views/Contact.vue'
 import SignUp from '../views/SignUp.vue'
 import SignIn from '../views/SignIn.vue'
 import Apply from '../views/Apply.vue'
+import Terms from '../views/Terms.vue'
 
 Vue.use(VueRouter)
 
@@ -41,6 +42,11 @@ Vue.use(VueRouter)
     path: '/apply',
     name: 'Apply',
     component: Apply
+  },
+  {
+    path: '/terms',
+    name: 'Terms',
+    component: Terms
   },
 ]
 
